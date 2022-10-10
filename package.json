@@ -1,10 +1,10 @@
 {
-  "name": "ms-identity-angular-c1s1",
+  "name": "sso-v6-poc",
   "version": "1.0.0",
   "description": "Angular single-page application using MSAL React to sign-in users with Azure Active Directory",
   "scripts": {
     "ng": "ng",
-    "start":"set NODE_OPTIONS=--openssl-legacy-provider && ng serve ",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve ",
     "build": "ng build",
     "test": "ng test --watch=false --no-progress --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
@@ -24,6 +24,7 @@
     "@azure/msal-angular": "^2.0.2",
     "@azure/msal-browser": "^2.16.0",
     "core-js": "^3.8.0",
+    "firebase": "^9.11.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

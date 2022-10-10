@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "sso-v6-poc",
+    "sso-v6-poc": "sso-v6-poc"
+  },
+  "targets": {},
+  "etags": {}
+}

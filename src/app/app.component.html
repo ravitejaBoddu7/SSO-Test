@@ -2,11 +2,20 @@
   <a class="title" href="/">{{ title }}</a>
 
   <div class="toolbar-spacer"></div>
-  <a>SSO-Test2</a>
+  <a>SSO-V6-POC</a>
   <a mat-button [routerLink]="['guarded']">Guarded Component</a>
 
-  <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
-  <button mat-raised-button color="accent" *ngIf="loginDisplay" (click)="logout()">Logout</button>
+  <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">
+    Login
+  </button>
+  <button
+    mat-raised-button
+    color="accent"
+    *ngIf="loginDisplay"
+    (click)="logout()"
+  >
+    Logout
+  </button>
 </mat-toolbar>
 <div class="container">
   <!--This is to avoid reload during acquireTokenSilent() because of hidden iframe -->
@@ -16,7 +25,13 @@
 <footer *ngIf="loginDisplay">
   <mat-toolbar>
     <div class="footer-text">
-      How did we do? <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcsbpbxNJuZCMKN0lURpUOU5PNlM4MzRRV0lETkk2ODBPT0NBTEY5MCQlQCN0PWcu" target="_blank"> Share your experience with us!</a>
+      How did we do?
+      <a
+        href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcsbpbxNJuZCMKN0lURpUOU5PNlM4MzRRV0lETkk2ODBPT0NBTEY5MCQlQCN0PWcu"
+        target="_blank"
+      >
+        Share your experience with us!</a
+      >
     </div>
   </mat-toolbar>
 </footer>
